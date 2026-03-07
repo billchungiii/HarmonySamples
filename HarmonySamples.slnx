@@ -3,4 +3,8 @@
     <Project Path="Sample001/SampleApp001/SampleApp001.csproj" Id="ffc7b63e-76e7-4ac6-9c06-04a2affe33fa" />
     <Project Path="Sample001/SampleLibrary001/SampleLibrary001.csproj" Id="56191bb3-681d-49bd-b58a-ca29cdc63d0a" />
   </Folder>
+  <Folder Name="/Sample002/">
+    <Project Path="Sample002/SampleApp002/SampleApp002.csproj" Id="4e20b185-0311-480b-9204-df426eeb9237" />
+    <Project Path="Sample002/SampleLibrary002/SampleLibrary002.csproj" Id="f0bd8991-b446-4e4e-b206-47f3452ce61c" />
+  </Folder>
 </Solution>

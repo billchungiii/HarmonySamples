@@ -3,6 +3,12 @@ using HarmonyLib;
 using SampleLibrary003;
 namespace SampleApp003
 {
+    /// <summary>
+    /// Provides the entry point for the application and demonstrates the usage of the Harmony patching mechanism for handling parameters and return value.
+    /// This application demonstrates the use of the Harmony library to patch methods at runtime.
+    /// Specifically, it shows how to intercept method calls, handle parameters (e.g., prevent divide-by-zero errors),
+    /// and modify return values using a Prefix patch.
+    /// </summary>
     internal class Program
     {
         static void Main(string[] args)

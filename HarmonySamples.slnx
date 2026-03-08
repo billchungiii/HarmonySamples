@@ -7,4 +7,8 @@
     <Project Path="Sample002/SampleApp002/SampleApp002.csproj" Id="4e20b185-0311-480b-9204-df426eeb9237" />
     <Project Path="Sample002/SampleLibrary002/SampleLibrary002.csproj" Id="f0bd8991-b446-4e4e-b206-47f3452ce61c" />
   </Folder>
+  <Folder Name="/Sample003/">
+    <Project Path="Sample003/SampleApp003/SampleApp003.csproj" Id="c01cf9bc-094a-412f-995f-e243289de9c3" />
+    <Project Path="Sample003/SampleLibrary003/SampleLibrary003.csproj" Id="b6666c67-7ed5-4025-a2c2-3ff4895844b4" />
+  </Folder>
 </Solution>

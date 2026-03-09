@@ -77,8 +77,4 @@ namespace SampleApp006
         }
     }
 
-
-
-
-
 }

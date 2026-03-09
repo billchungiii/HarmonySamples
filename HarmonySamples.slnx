@@ -27,4 +27,8 @@
     <Project Path="Sample007/SampleApp007/SampleApp007.csproj" Id="3999275a-5c96-4c69-ad1a-0fa9ee15d6d0" />
     <Project Path="Sample007/SampleLibrary007/SampleLibrary007.csproj" Id="b3241132-2c2b-4822-aa3d-f23911b877a4" />
   </Folder>
+  <Folder Name="/Sample008/">
+    <Project Path="Sample008/SampleApp008/SampleApp008.csproj" Id="b2fa81ac-22e6-47c5-971a-7d07c5a36b99" />
+    <Project Path="Sample008/SampleLibrary008/SampleLibrary008.csproj" Id="0f704f06-8903-4749-b2b9-578b0f5217f8" />
+  </Folder>
 </Solution>

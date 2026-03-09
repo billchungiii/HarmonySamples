@@ -17,7 +17,7 @@ namespace SampleApp008
         }
     }
 
-    public class StatechMachineInfo
+    public class StateMachineInfo
     {
         public FieldInfo Field { get; set; }
         public Stopwatch Stopwatch { get; set; }
@@ -27,7 +27,7 @@ namespace SampleApp008
     [HarmonyPatch]
     public static class PatchOriginal
     {
-        private static readonly ConditionalWeakTable<object, StatechMachineInfo> _stopwatches = new();
+        private static readonly ConditionalWeakTable<object, StateMachineInfo> _stopwatches = new();
         static MethodBase TargetMethod()
         {
             var method = typeof(OriginalClass).GetMethod(nameof(OriginalClass.LongTimeMethodAsync));
@@ -43,7 +43,7 @@ namespace SampleApp008
                 // -1 indicates the state machine has just started execution
                 var stateField = __instance.GetType().GetField("<>1__state", BindingFlags.Public | BindingFlags.Instance);
                 var sw = new Stopwatch();
-                info = new StatechMachineInfo { Field = stateField, Stopwatch = sw};
+                info = new StateMachineInfo { Field = stateField, Stopwatch = sw};
                 _stopwatches.Add(__instance, info);
                 sw.Start();
             }

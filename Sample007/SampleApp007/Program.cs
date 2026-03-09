@@ -47,9 +47,6 @@ namespace SampleApp007
         }
     }
 
-
-
-
     public static class PatchOriginal
     {
         public static bool Divide(double x, double y, ref double __result)

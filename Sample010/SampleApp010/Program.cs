@@ -70,6 +70,12 @@ namespace SampleApp010
         }
     }
 
+    /// <summary>
+    /// Represents an error that occurs during parsing operations.
+    /// </summary>
+    /// <remarks>Use this exception to indicate that a parsing process has failed due to invalid input or
+    /// unexpected data. This exception is typically thrown by parsers when the input does not conform to the expected
+    /// format.</remarks>
     public class ParserException : Exception
     {
         public ParserException(string message) : base(message) { }

@@ -19,10 +19,17 @@ namespace SampleApp011
     /// <summary>
     /// Provides a Harmony patch for the static constructor of the OriginalClass type.
     /// </summary>
-    /// <remarks>This class is used to modify the static constructor of OriginalClass at runtime using
-    /// Harmony. It replaces any occurrence of the integer constant 100 with 5 in the constructor's IL code. This patch
-    /// is typically used to alter the behavior of the original static constructor without modifying the source code
-    /// directly.</remarks>
+    /// <remarks>
+    /// This class demonstrates the use of a <b>Harmony Transpiler</b> to modify IL code at runtime.
+    /// The Transpiler method receives and yields <see cref="CodeInstruction"/> objects, which represent
+    /// individual IL instructions. By iterating through these <see cref="CodeInstruction"/> instances,
+    /// you can inspect, modify, add, or remove IL instructions before they are executed.
+    /// 
+    /// In this example, the Transpiler replaces any occurrence of the integer constant 100 
+    /// (loaded via <see cref="OpCodes.Ldc_I4_S"/>) with the constant 5 (using <see cref="OpCodes.Ldc_I4_5"/>).
+    /// This approach allows altering the behavior of the original static constructor without modifying
+    /// the source code directly.
+    /// </remarks>
     [HarmonyPatch(typeof(OriginalClass), MethodType.StaticConstructor)]
     public class PatchOriginal
     {

@@ -45,5 +45,6 @@
   </Folder>
   <Folder Name="/Sample012/">
     <Project Path="Sample012/SampleApp012/SampleApp012.csproj" Id="fe5bcea7-d38e-4642-8d76-b02b74c9c04f" />
+    <Project Path="Sample012/SampleLibrary012/SampleLibrary012.csproj" Id="5245654b-39a4-4a59-872c-10e1d079a714" />
   </Folder>
 </Solution>

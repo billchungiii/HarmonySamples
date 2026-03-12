@@ -10,7 +10,7 @@ namespace SampleApp011
     {
         static void Main(string[] args)
         {
-            var harmony = new Harmony("com.example.sampleApp011");
+            var harmony = new Harmony("com.example.sample011");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             Console.WriteLine($"Original Value: {OriginalClass.Value}"); 
         }
